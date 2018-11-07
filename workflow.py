@@ -1,10 +1,11 @@
 from gwf import Workflow
 
-# prepare_input.py example vcf
+# prepare_input.py --vcf ../example/chimp_chr9_50.vcf --prefix ../example/tmp
 
-# ./shapeit --input-vcf ../../example/chimp_chr9_100.vcf
-#           --input-map ../example/genetic_map.txt
-#           --output-max ../example/gwas.phased.haps ../example/gwas.phased.sample
+# shapeit   --force
+#           --input-vcf ./example/tmp.vcf
+#           --input-map ./example/tmp_map.txt
+#           --output-max ./example/tmp.haps ./example/tmp.sample
 
 # ./duohmm -H duohmm-example \
 #          -M genetic_map_chr10_combined_b37.txt \
